@@ -1,0 +1,160 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+.app__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: auto;
+}
+
+.home__wrapper {
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  width: 355px;
+  padding: 20px;
+  background-color: #252c4a;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.home__header {
+  color: #5d6487;
+  border-bottom: 1px #5d6487 dotted;
+}
+
+.home__header > h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.home__header > h3 > span {
+  font-size: 1.5rem;
+}
+
+.home__question {
+  margin: 2rem 0;
+}
+
+.home__question > p {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.home__option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px #0f7eea solid;
+  padding: 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.home__option.active {
+  background-color: #fff;
+  color: #0f7eea;
+}
+
+.home__option > i {
+  color: #0f7eea;
+  font-size: 1.5rem;
+}
+
+.home__option:hover {
+  background-color: #6f7592;
+  color: #fff;
+  cursor: pointer;
+}
+
+.home__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.home__buttons > button {
+  margin-left: 10px;
+  border: none;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: #fff;
+  background: #0f7eea;
+  box-shadow: 0 10px 36px rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+  width: 100px;
+}
+
+.home__buttons > button:hover {
+  background-color: #fff;
+  color: #0f7eea;
+  cursor: pointer;
+}
+
+.disabled-button {
+  opacity: 0.3 !important;
+  cursor: not-allowed !important;
+}
+
+.progress {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  position: relative;
+  margin: 15px 0;
+  height: 30px;
+  width: 300px;
+}
+
+.progress-done {
+  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  box-shadow: 0 3px 3px -5px #d6d6d6, 0 2px 5px #cccccc;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+.done {
+  margin: 2rem;
+  text-align: center;
+}
+
+.fa-trophy {
+  color: #ffd700;
+  margin-top: 1rem;
+}
