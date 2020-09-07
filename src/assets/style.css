@@ -121,7 +121,7 @@ a {
   cursor: pointer;
 }
 
-.disabled-button {
+.home__buttons > button:disabled {
   opacity: 0.3 !important;
   cursor: not-allowed !important;
 }

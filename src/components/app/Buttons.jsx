@@ -15,12 +15,9 @@ const Buttons = ({
         <button onClick={() => restart()}>Restart</button>
       ) : (
         <>
-          {' '}
-          {!currentQuestion ? (
-            <button className='disabled-button'>Previous</button>
-          ) : (
-            <button onClick={() => prevQuestion()}>Previous</button>
-          )}
+          <button disabled={!currentQuestion} onClick={() => prevQuestion()}>
+            Previous
+          </button>
           <button onClick={() => nextQuestion()}>
             {currentQuestion !== questions.length - 1 ? 'Next' : 'Done'}
           </button>
